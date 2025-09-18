@@ -1,0 +1,648 @@
+Allergie Check Section  proloader use :-
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergiecheck.de - Learn Everything About Allergies</title>
+
+    <!-- remix-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- Proload images -->
+    <link rel="preload" as="image" href="https://i.postimg.cc/wMQ0Ypx3/Rectangle-441.png" imagesrcset="https://i.postimg.cc/wMQ0Ypx3/Rectangle-441.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/yNZVXVyM/Rectangle-441-1.png" imagesrcset="https://i.postimg.cc/yNZVXVyM/Rectangle-441-1.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/9XNnVGhB/Rectangle-441-2.png" imagesrcset="https://i.postimg.cc/9XNnVGhB/Rectangle-441-2.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/Pf35jFJF/Rectangle-441-3.png" imagesrcset="https://i.postimg.cc/Pf35jFJF/Rectangle-441-3.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/3wmzLW0H/Rectangle-441-4.png" imagesrcset="https://i.postimg.cc/3wmzLW0H/Rectangle-441-4.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/RZ65mRh7/Rectangle-441-5.png" imagesrcset="https://i.postimg.cc/RZ65mRh7/Rectangle-441-5.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/ZK33BkW0/Rectangle-441-6.png" imagesrcset="https://i.postimg.cc/ZK33BkW0/Rectangle-441-6.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/Dwng7fx7/Rectangle-441-7.png" imagesrcset="https://i.postimg.cc/Dwng7fx7/Rectangle-441-7.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/FHYKd3Wp/card-9.jpg" imagesrcset="https://i.postimg.cc/FHYKd3Wp/card-9.jpg">
+    <link rel="preload" as="image" href="https://i.postimg.cc/wTGqp3qm/card-10.jpg" imagesrcset="https://i.postimg.cc/wTGqp3qm/card-10.jpg">
+    <link rel="preload" as="image" href="https://i.postimg.cc/V5yKqj9t/card-11.jpg" imagesrcset="https://i.postimg.cc/V5yKqj9t/card-11.jpg">
+    <link rel="preload" as="image" href="https://i.postimg.cc/x8L4Fx15/card-12.jpg" imagesrcset="https://i.postimg.cc/x8L4Fx15/card-12.jpg" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/4NZLx1dC/card-13.jpg" imagesrcset="https://i.postimg.cc/4NZLx1dC/card-13.jpg">
+    <link rel="preload" as="image" href="https://i.postimg.cc/L8x07Z2c/card-14.jpg" imagesrcset="https://i.postimg.cc/L8x07Z2c/card-14.jpg" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/dQR6pT95/card-15.jpg" imagesrcset="https://i.postimg.cc/dQR6pT95/card-15.jpg" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/5NxgVN7b/card-16.jpg" imagesrcset="https://i.postimg.cc/5NxgVN7b/card-16.jpg" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/90X7vzWk/card-17.jpg" imagesrcset="https://i.postimg.cc/90X7vzWk/card-17.jpg" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/vZTv42wK/card-18.jpg" imagesrcset="https://i.postimg.cc/vZTv42wK/card-18.jpg" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/8kwWLd4g/card-19.jpg" imagesrcset="https://i.postimg.cc/8kwWLd4g/card-19.jpg" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/26ky5JPb/card-20.webp" imagesrcset="https://i.postimg.cc/26ky5JPb/card-20.webp" >
+    <link rel="preload" as="image" href="https://i.postimg.cc/tJf42g7W/card-21.jpg" imagesrcset="https://i.postimg.cc/tJf42g7W/card-21.jpg" >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            color: #4a90a4;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .read-more {
+            color: #4a90a4;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .tabs-container {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #4a90a4;
+            padding-bottom: 10px;
+        }
+
+        .nav-tabs {
+            width: 70%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-radius: 50px;
+            padding: 10px;
+            background-color: #EAECF0;
+        }
+
+        .nav-tab {
+            width: 250px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background-color: #EAECF0;
+            color: #666;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .nav-tab:hover {
+            background-color: #5ba0b4;
+            color: white;
+        }
+
+        .nav-tab.active {
+            background-color: #4a90a4;
+            color: white;
+        }
+
+        .nav-tab i {
+            visibility: hidden;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+
+        .nav-tab:hover i {
+            visibility: visible;
+        }
+
+
+        .nav-tab[data-tooltip]::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff;
+            padding: 8px 12px;
+            font-size: 0.75rem;
+            border-radius: 6px;
+            white-space: normal;
+            opacity: 0;
+            pointer-events: none;
+            max-width: 200px;
+            width: max-content;
+            text-align: center;
+            line-height: 1.3;
+            transition: opacity 0.2s ease;
+            z-index: 100;
+        }
+
+        .nav-tab[data-tooltip]:hover::after {
+            opacity: 0.95;
+        }
+
+        @media (max-width: 768px) {
+
+            .nav-tab[data-tooltip]:hover::after,
+            .nav-tab[data-tooltip].show-tooltip::after {
+                bottom: auto;
+                top: -50px;
+                max-width: 180px;
+            }
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            position: relative;
+            height: 250px !important;
+            width: 100% !important;
+            color: white;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .card-1 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://drive.google.com/uc?export=view&id=1ZC-tfj_orXLibArfWE4mP5Bwk6NAXYfk");
+        }
+
+        .card-2 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/yNZVXVyM/Rectangle-441-1.png");
+
+        }
+
+        .card-3 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/9XNnVGhB/Rectangle-441-2.png");
+
+        }
+
+        .card-4 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/Pf35jFJF/Rectangle-441-3.png");
+            background-position-y: top;
+        }
+
+        .card-5 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/3wmzLW0H/Rectangle-441-4.png");
+
+        }
+
+        .card-6 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/RZ65mRh7/Rectangle-441-5.png");
+
+        }
+
+        .card-7 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/ZK33BkW0/Rectangle-441-6.png");
+        }
+
+        .card-8 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/Dwng7fx7/Rectangle-441-7.png");
+        }
+
+        /* Next sections */
+        .card-9 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/FHYKd3Wp/card-9.jpg");
+        }
+
+        .card-10 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/wTGqp3qm/card-10.jpg");
+        }
+
+        .card-11 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/V5yKqj9t/card-11.jpg");
+        }
+
+        .card-12 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/x8L4Fx15/card-12.jpg");
+        }
+
+        .card-13 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/4NZLx1dC/card-13.jpg");
+        }
+
+        .card-14 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/L8x07Z2c/card-14.jpg");
+        }
+
+        .card-15 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/dQR6pT95/card-15.jpg");
+        }
+
+        .card-16 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/5NxgVN7b/card-16.jpg");
+        }
+
+        /* Third section */
+        .card-17 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/90X7vzWk/card-17.jpg");
+        }
+
+        .card-18 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/vZTv42wK/card-18.jpg");
+        }
+
+        .card-19 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/8kwWLd4g/card-19.jpg");
+        }
+
+        .card-20 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/26ky5JPb/card-20.webp");
+        }
+
+        .card-21 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.801), transparent), url("https://i.postimg.cc/tJf42g7W/card-21.jpg");
+        }
+
+
+        .view-all-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 30px;
+            border-radius: 25px;
+            border: none;
+            background-color: #4a90a4;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-btn:hover {
+            background-color: #5ba0b4;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .nav-tabs {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .content-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .nav-tabs {
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .nav-tab {
+                flex: 1 1 calc(50% - 10px);
+                text-align: center;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
+
+            .header p {
+                font-size: 14px;
+            }
+
+            .nav-tabs {
+                flex-direction: column;
+                align-items: stretch;
+                background: transparent;
+                gap: 8px;
+            }
+
+            .nav-tab {
+                width: 100%;
+                border-radius: 10px;
+                font-size: 0.85rem;
+            }
+
+            .nav-tab[data-tooltip]::after {
+                top: auto;
+                bottom: calc(100% + 10px);
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .card {
+                height: 200px !important;
+                padding: 15px;
+            }
+
+            .card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+                visibility: visible;
+                opacity: 1;
+            }
+
+
+            .card h3 {
+                font-size: 15px;
+                line-height: 1.3;
+            }
+
+            .view-all-btn {
+                width: 100%;
+                padding: 10px;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.2rem;
+            }
+
+            .nav-tab {
+                font-size: 0.8rem;
+                padding: 15px 10px;
+            }
+
+            .card {
+                height: 180px !important;
+            }
+
+            .card h3 {
+                font-size: 14px;
+            }
+
+            .view-all-btn {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Allergiecheck.de - Learn Everything About Allergies</h1>
+            <p id="allergy-text">
+                Allergies are among the most common health issues today - millions of people in Germany are affected.
+                <span class="dots">...</span>
+                <span class="more-text" style="display:none;">
+                    They occur when the immune system reacts to harmless substances like pollen, dust mites, or certain
+                    foods.
+                </span>
+                <span class="read-more">Read More <i class="ri-arrow-down-s-line"></i></span>
+            </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-container">
+            <div class="nav-tabs">
+                <button class="nav-tab active"
+                    data-tooltip="Learn the basics of allergies, including what they are and how they affect the body">Introduction
+                    to Allergies <i class="ri-information-line"></i></button>
+                <button class="nav-tab"
+                    data-tooltip="Understand common causes and triggers of allergies such as food, pollen, or dust">Causes
+                    & Triggers <i class="ri-information-line"></i></button>
+                <button class="nav-tab"
+                    data-tooltip="Discover preventive measures and safety tips to manage allergy risks">Prevention &
+                    Safety <i class="ri-information-line"></i></button>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="content-grid">
+            <!-- Introduction to Allergy  (8 cards) -->
+            <div class="card card-1">
+                <h3><a href="">What is an Allergy? Causes Triggers</a></h3>
+            </div>
+            <div class="card card-2">
+                <h3><a href="">Top 10 Most Common Allergy Symptoms...</a></h3>
+            </div>
+            <div class="card card-3">
+                <h3><a href="">Pollen Allergy Guide: Seasons, Risks, and Relief</a></h3>
+            </div>
+            <div class="card card-4">
+                <h3><a href="">Food Allergies: How To Identify & Manage...</a></h3>
+            </div>
+            <div class="card card-5">
+                <h3><a href="">Understanding Dust and Pet Allergies</a></h3>
+            </div>
+            <div class="card card-6">
+                <h3><a href="">Allergy Testing Made Simple</a></h3>
+            </div>
+            <div class="card card-7">
+                <h3><a href="">Effective Treatments for Allergies</a></h3>
+            </div>
+            <div class="card card-8">
+                <h3><a href="">Everyday Tips for Living Better With Allergies</a></h3>
+            </div>
+
+            <!-- Symptoms & Diagnosis (8 cards) -->
+            <div class="card card-9">
+                <h3><a href="">What is "allergic cough"?</a></h3>
+            </div>
+            <div class="card card-10">
+                <h3><a href="">Do allergies causepain?</a></h3>
+            </div>
+            <div class="card card-11">
+                <h3><a href="">Itchy throat due to an allergy?</a></h3>
+            </div>
+            <div class="card card-12">
+                <h3><a href="">Mucus in the throat: What is normal...</a></h3>
+            </div>
+            <div class="card card-13">
+                <h3><a href="">Why do I keep sneezing? Allergy?</a></h3>
+            </div>
+            <div class="card card-14">
+                <h3><a href="">Can allergies cause headaches?</a></h3>
+            </div>
+            <div class="card card-15">
+                <h3><a href="">What does allergy-induced dizziness...</a></h3>
+            </div>
+            <div class="card card-16">
+                <h3><a href="">How can your allergy make you tired?</a></h3>
+            </div>
+
+            <!-- Treatment & Therapy (8 cards) -->
+            <div class="card card-17">
+                <h3><a href="">Hyposensitization (allergy immunotherapy)</a></h3>
+            </div>
+            <div class="card card-18">
+                <h3><a href="">Allergy treatment with tablets</a></h3>
+            </div>
+            <div class="card card-19">
+                <h3><a href="">Hyposensitization with injections</a></h3>
+            </div>
+            <div class="card card-20">
+                <h3><a href="">What is hyposensitization with drops?</a></h3>
+            </div>
+            <div class="card card-21">
+                <h3><a href="">How do antihistamines work?</a></h3>
+            </div>
+
+        </div>
+
+        <!-- View All Button -->
+        <button class="view-all-btn">View All </button>
+    </div>
+
+    <!-- js -->
+    <script>
+        const preloadImages = [
+            "https://i.postimg.cc/wMQ0Ypx3/Rectangle-441.png",
+            "https://i.postimg.cc/yNZVXVyM/Rectangle-441-1.png",
+            "https://i.postimg.cc/9XNnVGhB/Rectangle-441-2.png",
+            "https://i.postimg.cc/Pf35jFJF/Rectangle-441-3.png",
+            "https://i.postimg.cc/3wmzLW0H/Rectangle-441-4.png",
+            "https://i.postimg.cc/RZ65mRh7/Rectangle-441-5.png",
+            "https://i.postimg.cc/ZK33BkW0/Rectangle-441-6.png",
+            "https://i.postimg.cc/Dwng7fx7/Rectangle-441-7.png",
+            "https://i.postimg.cc/FHYKd3Wp/card-9.jpg",
+            "https://i.postimg.cc/wTGqp3qm/card-10.jpg",
+            "https://i.postimg.cc/V5yKqj9t/card-11.jpg",
+            "https://i.postimg.cc/x8L4Fx15/card-12.jpg",
+            "https://i.postimg.cc/4NZLx1dC/card-13.jpg",
+            "https://i.postimg.cc/L8x07Z2c/card-14.jpg",
+            "https://i.postimg.cc/dQR6pT95/card-15.jpg",
+            "https://i.postimg.cc/5NxgVN7b/card-16.jpg",
+            "https://i.postimg.cc/90X7vzWk/card-17.jpg",
+            "https://i.postimg.cc/vZTv42wK/card-18.jpg",
+            "https://i.postimg.cc/8kwWLd4g/card-19.jpg",
+            "https://i.postimg.cc/26ky5JPb/card-20.webp",
+            "https://i.postimg.cc/tJf42g7W/card-21.jpg"
+        ]
+
+        preloadImages.forEach(src =>{
+            const img = new Image();
+            img.src = src;
+        })
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const navTabs = document.querySelectorAll(".nav-tab");
+            const cards = document.querySelectorAll(".card");
+            const viewAllBtn = document.querySelector(".view-all-btn");
+
+
+            function showTabCards(tabIndex) {
+                cards.forEach(card => card.style.display = "none");
+
+
+                if (tabIndex === 0) {
+                    cards.forEach((c, i) => { if (i < 8) c.style.display = "flex"; });
+                }
+                if (tabIndex === 1) {
+                    cards.forEach((c, i) => { if (i >= 8 && i < 16) c.style.display = "flex"; });
+                }
+                if (tabIndex === 2) {
+                    cards.forEach((c, i) => { if (i >= 16 && i < 21) c.style.display = "flex"; });
+                }
+            }
+
+            showTabCards(0);
+
+            navTabs.forEach((tab, idx) => {
+                tab.addEventListener("click", () => {
+                    navTabs.forEach(t => t.classList.remove("active"));
+                    tab.classList.add("active");
+                    showTabCards(idx);
+                });
+
+                tab.addEventListener("touchstart", () => {
+                    tab.classList.add("show-tooltip");
+                    setTimeout(() => tab.classList.remove("show-tooltip"), 1500);
+                });
+            });
+
+            viewAllBtn.addEventListener("click", () => {
+                navTabs.forEach(t => t.classList.remove("active"));
+                cards.forEach(card => card.style.display = "flex");
+            });
+
+
+            const allergyText = document.getElementById("allergy-text");
+            const readMoreBtn = allergyText.querySelector(".read-more");
+            const moreText = allergyText.querySelector(".more-text");
+            const dots = allergyText.querySelector(".dots");
+
+            readMoreBtn.addEventListener("click", () => {
+                if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    dots.style.display = "inline";
+                    readMoreBtn.innerHTML = 'Read More <i class="ri-arrow-down-s-line"></i>';
+                } else {
+                    moreText.style.display = "inline";
+                    dots.style.display = "none";
+                    readMoreBtn.innerHTML = 'Read Less <i class="ri-arrow-up-s-line"></i>';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
